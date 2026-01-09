@@ -21,7 +21,7 @@ LINK_DO_POWER_BI = "https://app.powerbi.com/view?r=eyJrIjoiMTkyMmU1ZWItODgyZi00M
 @st.cache_resource
 def load_assets():
     try:
-        pipeline = joblib.load('modelo_obesidade.pkl')
+        pipeline = joblib.load('6 - modelo_obesidade.pkl')
         encoder = joblib.load('encoder_target.pkl')
         return pipeline, encoder
     except FileNotFoundError:
